@@ -4,7 +4,7 @@ __human_name__ = 'strings'
 
 # Add your code after this line
 
-#Part 1; Assignment: Strings
+"""Part 1; Assignment: Strings"""
 
 #Who scored in the Euro88 Final
 scorer_0 = 'Ruud Gullit'
@@ -19,15 +19,15 @@ scorers = scorer_0 +' ' +str(goal_0) + ', '+ scorer_1 +' ' +str(goal_1)
 print(scorers)
 
 #Reporting
-report = (f"{scorer_0} scored in the {goal_0}nd minute\n{scorer_1} scored in the {goal_1}th minute")
+report = f"{scorer_0} scored in the {goal_0}nd minute\n{scorer_1} scored in the {goal_1}th minute"
 
 
 """Part 2; Assignement: Strings"""
 
 #Spelernaam
 player = 'Ruud Gullit'
-first_name = player[:4]
-last_name = player[5:]
+first_name = player[:player.find(' ')]
+last_name = player[player.find(' '):]
 print(first_name)
 
 last_name_len = len(last_name)
